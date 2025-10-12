@@ -1,0 +1,84 @@
+<!-- header.component.html -->
+<header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20 md:h-24">
+      <!-- Logo -->
+      <a [routerLink]="['/']" class="flex items-center space-x-3">
+        <img src="assets/images/MBUNI - ONE.png" 
+             alt="Mbuni Tours & Safaris Logo" 
+             class="h-14 w-auto md:h-16">
+        <span class="text-2xl md:text-3xl font-extrabold text-gray-900">
+          <span class="text-indigo-600 hover:text-indigo-700 transition-colors">MBUNI</span> TOURS & SAFARIS
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-1 flex-shrink-0">
+        <a [routerLink]="['/']" 
+           class="px-3 py-2 text-base font-bold text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
+          Home
+        </a>
+        <a [routerLink]="['/about']" 
+           class="px-3 py-2 text-base font-bold text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
+          About Us
+        </a>
+        <a [routerLink]="['/gallery']" 
+           class="px-3 py-2 text-base font-semibold text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
+          Gallery
+        </a>
+        <a [routerLink]="['/plan-your-trip']" 
+           class="px-3 py-2 text-base font-semibold text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
+          Plan Your Trip
+        </a>
+        <a [routerLink]="['/things-to-do']" 
+           class="px-3 py-2 text-base font-semibold text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
+          Things To Do
+        </a>
+        <a [routerLink]="['/contact']" 
+           class="ml-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold transition-colors text-sm shadow-md hover:shadow-lg">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button (click)="toggleMenu()" 
+                class="p-2 rounded-md text-amber-600 hover:text-amber-700 focus:outline-none transition-colors"
+                aria-label="Toggle menu">
+          <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div *ngIf="isMenuOpen" class="md:hidden bg-white shadow-lg rounded-lg mt-2 py-2">
+      <a (click)="closeMenu()" [routerLink]="['/']" 
+         class="block px-6 py-4 text-lg font-extrabold text-gray-700 hover:bg-gray-50">
+        Home
+      </a>
+      <a (click)="closeMenu()" [routerLink]="['/about']" 
+         class="block px-6 py-4 text-lg font-extrabold text-gray-700 hover:bg-gray-50">
+        About Us
+      </a>
+      <a (click)="closeMenu()" [routerLink]="['/gallery']" 
+         class="block px-6 py-4 text-lg font-extrabold text-gray-700 hover:bg-gray-50">
+        Gallery
+      </a>
+      <a (click)="closeMenu()" [routerLink]="['/plan-your-trip']" 
+         class="block px-6 py-4 text-lg font-extrabold text-gray-700 hover:bg-gray-50">
+        Plan Your Trip
+      </a>
+      <a (click)="closeMenu()" [routerLink]="['/things-to-do']" 
+         class="block px-6 py-4 text-lg font-extrabold text-gray-700 hover:bg-gray-50">
+        Things To Do
+      </a>
+      <a (click)="closeMenu()" [routerLink]="['/contact']" 
+         class="block mx-4 my-2 px-6 py-3 text-center rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold shadow-md hover:shadow-lg">
+        Contact Us
+      </a>
+    </div>
+  </nav>
+</header>

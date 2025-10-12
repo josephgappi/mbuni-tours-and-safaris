@@ -1,0 +1,9 @@
+.sticky {
+  position: sticky;
+  top: 1.5rem;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}

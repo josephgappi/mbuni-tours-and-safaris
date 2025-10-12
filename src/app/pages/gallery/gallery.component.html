@@ -1,0 +1,28 @@
+<!-- gallery.component.html -->
+<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Mbuni Gallery</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Explore the breathtaking moments from our tours and safaris
+      </p>
+    </div>
+
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+      <div *ngFor="let image of images; let i = index" 
+           class="group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl break-inside-avoid">
+        <div class="aspect-w-4 aspect-h-3">
+          <img [src]="image" 
+               [alt]="'Gallery image ' + (i + 1)" 
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+          <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-lg font-semibold">Tour Destination {{ i + 1 }}</h3>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click to view full size</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

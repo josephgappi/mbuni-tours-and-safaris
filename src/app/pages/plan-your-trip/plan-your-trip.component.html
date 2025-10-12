@@ -1,0 +1,142 @@
+<!-- plan-your-trip.component.html -->
+<div class="pt-28 pb-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        Plan Your <span class="text-rose-600">Dream Safari</span>
+      </h1>
+      <div class="w-24 h-1.5 bg-rose-600 mx-auto mb-8"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Let us help you create a personalized African adventure that matches your dreams
+      </p>
+    </div>
+
+    <!-- Trip Planning Steps -->
+    <div class="grid md:grid-cols-4 gap-8 mb-20">
+      <div class="relative">
+        <div class="absolute -left-4 top-0 h-full w-0.5 bg-rose-200 md:hidden"></div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-rose-600 flex items-center justify-center text-white font-bold text-lg">1</div>
+          <div class="ml-4">
+            <h3 class="text-lg font-bold text-gray-900">Choose Your Destination</h3>
+            <p class="mt-1 text-gray-600">Select from our curated list of African destinations</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="absolute -left-4 top-0 h-full w-0.5 bg-rose-200 md:hidden"></div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-rose-600 flex items-center justify-center text-white font-bold text-lg">2</div>
+          <div class="ml-4">
+            <h3 class="text-lg font-bold text-gray-900">Select Your Dates</h3>
+            <p class="mt-1 text-gray-600">Pick your preferred travel dates and duration</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="absolute -left-4 top-0 h-full w-0.5 bg-rose-200 md:hidden"></div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-rose-600 flex items-center justify-center text-white font-bold text-lg">3</div>
+          <div class="ml-4">
+            <h3 class="text-lg font-bold text-gray-900">Customize Your Itinerary</h3>
+            <p class="mt-1 text-gray-600">Tailor your experience with our expert guidance</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-rose-600 flex items-center justify-center text-white font-bold text-lg">4</div>
+          <div class="ml-4">
+            <h3 class="text-lg font-bold text-gray-900">Book & Travel</h3>
+            <p class="mt-1 text-gray-600">Confirm your trip and get ready for an adventure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Packages -->
+    <div class="mb-20">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Popular Safari Packages</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Package 1 -->
+        <a [routerLink]="['/itinerary/great-migration-safari']" class="block group">
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+            <div class="h-56 overflow-hidden">
+              <img src="assets/images/PICHA - 12.png" alt="Great Migration Safari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Great Migration Safari</h3>
+              <p class="text-amber-600 font-bold mb-4">7 Days | Masai Mara, Kenya</p>
+              <p class="text-gray-700 font-medium mb-5 flex-grow">Witness one of nature's greatest spectacles as millions of wildebeest cross the Mara River.</p>
+              <div class="mt-auto">
+                <span class="inline-flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-colors">
+                  View Itinerary
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <!-- Package 2 -->
+        <a [routerLink]="['/itinerary/big-five-adventure']" class="block group">
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+            <div class="h-56 overflow-hidden">
+              <img src="assets/images/PICHA - 15.png" alt="Big Five Adventure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Big Five Adventure</h3>
+              <p class="text-amber-600 font-bold mb-4">10 Days | Serengeti, Tanzania</p>
+              <p class="text-gray-700 font-medium mb-5 flex-grow">Track the Big Five across the vast plains of the Serengeti National Park.</p>
+              <div class="mt-auto">
+                <span class="inline-flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-colors">
+                  View Itinerary
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <!-- Package 3 -->
+        <a [routerLink]="['/itinerary/luxury-safari-retreat']" class="block group">
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+            <div class="h-56 overflow-hidden">
+              <img src="assets/images/PICHA - 18.png" alt="Luxury Safari Retreat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Luxury Safari Retreat</h3>
+              <p class="text-amber-600 font-bold mb-4">5 Days | Private Reserves</p>
+              <p class="text-gray-700 font-medium mb-5 flex-grow">Experience the ultimate in luxury and wildlife viewing at exclusive lodges.</p>
+              <div class="mt-auto">
+                <span class="inline-flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-colors">
+                  View Itinerary
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <div class="bg-rose-600 rounded-2xl p-8 md:p-12 text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">Ready to Start Planning?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Our safari experts are here to help you create your perfect African adventure</p>
+      <a href="/contact" class="inline-block px-8 py-3 bg-white text-rose-600 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+        Contact Us Today
+      </a>
+    </div>
+  </div>
+</div>

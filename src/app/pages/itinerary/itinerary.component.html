@@ -1,0 +1,124 @@
+<div *ngIf="tour" class="min-h-screen bg-gray-50">
+  <!-- Hero Section -->
+  <div class="relative h-96 overflow-hidden">
+    <img [src]="tour.image" [alt]="tour.title" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ tour.title }}</h1>
+        <div class="flex items-center justify-center space-x-4">
+          <span class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="ml-1">{{ tour.rating }}</span>
+          </span>
+          <span>{{ tour.location }}</span>
+          <span>{{ tour.duration }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- Main Content -->
+      <div class="md:w-2/3">
+        <!-- Tabs -->
+        <div class="border-b border-gray-200">
+          <nav class="-mb-px flex space-x-8">
+            <button (click)="setActiveTab('itinerary')" [class.text-amber-600 border-amber-500]="activeTab === 'itinerary'" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+              Itinerary
+            </button>
+            <button (click)="setActiveTab('highlights')" [class.text-amber-600 border-amber-500]="activeTab === 'highlights'" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+              Highlights
+            </button>
+            <button (click)="setActiveTab('gallery')" [class.text-amber-600 border-amber-500]="activeTab === 'gallery'" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+              Gallery
+            </button>
+          </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="mt-8">
+          <!-- Itinerary Tab -->
+          <div *ngIf="activeTab === 'itinerary'" class="space-y-8">
+            <div *ngFor="let day of tour.itinerary" class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-amber-100 rounded-full h-10 w-10 flex items-center justify-center">
+                    <span class="text-amber-800 font-bold">{{ day.day }}</span>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-900">{{ day.title }}</h3>
+                    <p class="mt-1 text-gray-600">{{ day.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights Tab -->
+          <div *ngIf="activeTab === 'highlights'" class="space-y-6">
+            <h3 class="text-xl font-bold text-gray-900">Tour Highlights</h3>
+            <ul class="space-y-4">
+              <li *ngFor="let highlight of tour.highlights" class="flex items-start">
+                <svg class="h-6 w-6 text-amber-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">{{ highlight }}</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Gallery Tab -->
+          <div *ngIf="activeTab === 'gallery'" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div *ngFor="let image of tour.gallery" class="rounded-lg overflow-hidden">
+              <img [src]="image" alt="Gallery image" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="md:w-1/3">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden sticky top-6">
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-2xl font-bold text-gray-900">${{ tour.price }}</p>
+                <p class="text-sm text-gray-500">per person</p>
+              </div>
+              <button class="bg-amber-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-amber-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+
+            <div class="mt-6 space-y-4">
+              <div class="flex items-center">
+                <svg class="h-5 w-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-700">{{ tour.duration }}</span>
+              </div>
+              <!-- Add other details here -->
+            </div>
+
+            <div class="mt-8">
+              <h4 class="text-lg font-medium text-gray-900 mb-4">Your Guides</h4>
+              <div class="space-y-4">
+                <div *ngFor="let guide of tour.guides" class="flex items-center">
+                  <img [src]="guide.avatar" [alt]="guide.name" class="h-12 w-12 rounded-full">
+                  <div class="ml-3">
+                    <p class="text-sm font-medium text-gray-900">{{ guide.name }}</p>
+                    <p class="text-sm text-gray-500">{{ guide.role }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
