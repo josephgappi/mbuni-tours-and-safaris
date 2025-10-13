@@ -1,0 +1,41 @@
+name: Angular CI + 🚀 Deploy to MbuniToursAndSafaris.com
+
+on:
+  push:
+    branches:
+      - main  # Runs when you push to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Angular App
+        run: npm run build -- --configuration=production --output-hashing=all
+
+      - name: Ensure index.html Exists
+        run: |
+          DIST_DIR=./dist/mbuni-tours-and-safaris/browser
+          if [ -f "$DIST_DIR/index.csr.html" ]; then
+            mv "$DIST_DIR/index.csr.html" "$DIST_DIR/index.html"
+          fi
+
+      - name: 🚀 Deploy to Production via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: mbunitoursandsafaris.com
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/mbuni-tours-and-safaris/
+          server-dir: /public_html
