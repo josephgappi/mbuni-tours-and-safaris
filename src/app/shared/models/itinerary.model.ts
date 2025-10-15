@@ -13,11 +13,14 @@ export interface Itinerary {
     day: number;
     title: string;
     description: string;
+    activities?: string[];
+    meals?: string[];
   }[];
-  guides: {
+  guides?: {
     name: string;
     avatar: string;
     role: string;
+    bio?: string;
   }[];
   location: string;
   difficulty: 'Easy' | 'Moderate' | 'Challenging';

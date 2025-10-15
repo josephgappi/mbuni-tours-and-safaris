@@ -1,6 +1,24 @@
 /* Global Styles */
 html {
   scroll-behavior: smooth;
+  background-color: #f3f4f6; /* Light grey background for the page */
+}
+
+/* Hero Section Styles */
+.relative.h-screen {
+  min-height: 100vh;
+  min-height: 100dvh; /* For better mobile browser support */
+  background-color: #9ca3af; /* Grey background as fallback */
+}
+
+.relative.h-screen .absolute.inset-0.z-0 {
+  height: 100%;
+}
+
+.relative.h-screen .absolute.inset-0.z-0 img {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -85,6 +103,7 @@ a {
 /* Section Spacing */
 section {
   padding: 4rem 0;
+  background-color: #f3f4f6; /* Light grey background for sections */
 }
 
 /* Button Styles */
@@ -125,5 +144,174 @@ section {
   
   section {
     padding: 2.5rem 0;
+  }
+}
+/* --- About Section Refined Modern Style (Video + Warm Earth Palette) --- */
+#about {
+  background: linear-gradient(to bottom, #fffaf2, #fef7e5, #fffdf8);
+  position: relative;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+#about h2 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+#about .text-gold {
+  color: #a9712c !important;
+}
+
+/* Video container hover */
+#about video {
+  transition: transform 0.6s ease-in-out;
+}
+#about .group:hover video {
+  transform: scale(1.05);
+}
+
+/* Decorative soft golden circles */
+#about::before,
+#about::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+#about::before {
+  top: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  background-color: #f6d77b;
+}
+
+#about::after {
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background-color: #fce7b1;
+}
+
+/* Video Play Button */
+#about video + button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#about video + button:not(.hidden) {
+  opacity: 1;
+}
+
+/* Sunset Gradient Button for About Section */
+#about a {
+  background: linear-gradient(to right, #f97316, #ea580c); /* sunset orange gradient */
+  color: #fff;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.9rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+}
+
+#about a:hover {
+  background: linear-gradient(to right, #ea580c, #c2410c); /* deeper sunset tone */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(234, 88, 12, 0.4);
+}
+
+/* Apply About Us background image to Testimonials section */
+section.relative.py-20.bg-gradient-to-b {
+  background-image: url('../../../assets/images/PUNDAMILIA.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: add a dark or warm overlay for text readability */
+section.relative.py-20.bg-gradient-to-b::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* adjust opacity for darker or lighter overlay */
+  z-index: 0;
+}
+
+/* Ensure content stays above the overlay */
+section.relative.py-20.bg-gradient-to-b > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🌍 Apply same background image to About Us section */
+#about {
+  background-image: url('../../../assets/images/PUNDAMILIA.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+/* ✨ Add a warm overlay for readability */
+#about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* You can adjust opacity */
+  z-index: 0;
+}
+
+/* 🧭 Keep content above the overlay */
+#about > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+/* Social Icon Styles */
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Mobile size adjustments */
+@media (max-width: 768px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Large screen horizontal spacing */
+@media (min-width: 769px) {
+  .social-icon {
+    margin: 0 8px;
   }
 }

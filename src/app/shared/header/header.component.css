@@ -1,0 +1,63 @@
+/* === Header Visual Enhancement === */
+header {
+  background: linear-gradient(90deg, #0b132b, #1c2541, #3a506b, #5bc0be);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Smooth animated gradient for premium effect */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Soft glow overlay */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 50%);
+  opacity: 0.4;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Nav text and hover */
+header a {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+header a:hover {
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.4);
+}
+
+/* === Fix Overlap with Page Content === */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+section:first-of-type,
+main:first-of-type,
+.hero:first-of-type {
+  padding-top: 6rem; /* Adjust based on header height */
+}
+
+section, main, .hero {
+  position: relative;
+  z-index: 1;
+}
+

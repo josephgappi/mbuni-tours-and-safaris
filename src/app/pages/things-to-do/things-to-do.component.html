@@ -1,13 +1,19 @@
 <!-- things-to-do.component.html -->
-<div class="pt-28 pb-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative pt-28 pb-16 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/PUNDAMILIA.png');">
+
+  <!-- Overlay to darken background for readability -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content wrapper -->
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <!-- Hero Section -->
     <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-        Things To <span class="text-rose-600">Do</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+        <span class="text-amber-500">Things To Do</span>
       </h1>
-      <div class="w-24 h-1.5 bg-rose-600 mx-auto mb-8"></div>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      <div class="w-24 h-1.5 bg-yellow-700 mx-auto mb-8"></div>
+      <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-semibold">
         Discover unforgettable experiences and activities across Africa's most spectacular destinations
       </p>
     </div>
@@ -19,10 +25,10 @@
         <img src="assets/images/PICHA - 20.png" 
              alt="Game Drives" 
              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Game Drives</h3>
-          <p class="text-gray-200 mb-4">Experience Africa's wildlife up close with our expert guides</p>
-          <a href="#" class="text-rose-300 font-semibold inline-flex items-center group-hover:text-white transition-colors">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Game Drives</h3>
+          <p class="text-gray-100 mb-4 font-semibold">Experience Africa's wildlife up close with our expert guides</p>
+          <a href="#" class="text-rose-300 font-bold inline-flex items-center group-hover:text-white transition-colors">
             Learn More
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -30,16 +36,16 @@
           </a>
         </div>
       </div>
-      
+
       <!-- Activity 2 -->
       <div class="group relative overflow-hidden rounded-xl shadow-lg h-96">
         <img src="assets/images/PICHA - 22.png" 
              alt="Hot Air Balloon Safaris" 
              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Hot Air Balloon Safaris</h3>
-          <p class="text-gray-200 mb-4">Soar above the savanna for a bird's-eye view of wildlife</p>
-          <a href="#" class="text-rose-300 font-semibold inline-flex items-center group-hover:text-white transition-colors">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Hot Air Balloon Safaris</h3>
+          <p class="text-gray-100 mb-4 font-semibold">Soar above the savanna for a bird's-eye view of wildlife</p>
+          <a href="#" class="text-rose-300 font-bold inline-flex items-center group-hover:text-white transition-colors">
             Learn More
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -47,16 +53,16 @@
           </a>
         </div>
       </div>
-      
+
       <!-- Activity 3 -->
       <div class="group relative overflow-hidden rounded-xl shadow-lg h-96">
         <img src="assets/images/PICHA - 25.png" 
              alt="Walking Safaris" 
              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Walking Safaris</h3>
-          <p class="text-gray-200 mb-4">Connect with nature on foot with our experienced guides</p>
-          <a href="#" class="text-rose-300 font-semibold inline-flex items-center group-hover:text-white transition-colors">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Walking Safaris</h3>
+          <p class="text-gray-100 mb-4 font-semibold">Connect with nature on foot with our experienced guides</p>
+          <a href="#" class="text-rose-300 font-bold inline-flex items-center group-hover:text-white transition-colors">
             Learn More
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -68,40 +74,57 @@
 
     <!-- Cultural Experiences -->
     <div class="mb-20">
-      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Cultural Experiences</h2>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-12">Cultural Experiences</h2>
       <div class="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Connect with Local Communities</h3>
-          <p class="text-gray-600 mb-6">
+        <!-- Left Column: Single Image -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="assets/images/Picha5.png" 
+               alt="Cultural Experience" 
+               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-white">Local Culture</h3>
+              <p class="text-amber-200 font-semibold">Experience authentic traditions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Content -->
+        <div class="mt-8 md:mt-0">
+          <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Connect with Local Communities</h3>
+          <p class="text-gray-100 mb-6 font-semibold">
             Immerse yourself in the rich cultures of Africa through authentic interactions with local communities. 
             From Maasai villages to Swahili coastal towns, our cultural experiences offer meaningful connections 
             and insights into traditional ways of life.
           </p>
           <ul class="space-y-3">
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-rose-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <li class="flex items-start text-gray-100 font-semibold">
+              <svg class="h-5 w-5 text-amber-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Village visits and cultural performances</span>
+              Village visits and cultural performances
             </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-rose-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <li class="flex items-start text-gray-100 font-semibold">
+              <svg class="h-5 w-5 text-amber-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Traditional cooking classes</span>
+              Traditional cooking classes
             </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-rose-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <li class="flex items-start text-gray-100 font-semibold">
+              <svg class="h-5 w-5 text-amber-500 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Handicraft workshops with local artisans</span>
+              Handicraft workshops with local artisans
             </li>
           </ul>
-        </div>
-        <div class="rounded-xl overflow-hidden shadow-xl">
-          <img src="assets/images/PICHA - 28.png" 
-               alt="Cultural Experience" 
-               class="w-full h-full object-cover">
+          <div class="mt-8">
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105">
+              Learn More
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>

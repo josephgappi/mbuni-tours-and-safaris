@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PlanYourTripComponent } from './pages/plan-your-trip/plan-your-trip.component';
 import { ThingsToDoComponent } from './pages/things-to-do/things-to-do.component';
 import { ItineraryComponent } from './pages/itinerary/itinerary.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
   { 
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'plan-your-trip', component: PlanYourTripComponent },
   { path: 'itinerary/:id', component: ItineraryComponent },
   { path: 'things-to-do', component: ThingsToDoComponent },
+  { path: 'contact', component: ContactComponent},
   { path: '**', redirectTo: '' }
   
   // Add more routes here as needed
