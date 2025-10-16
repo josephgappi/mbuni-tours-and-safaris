@@ -130,7 +130,7 @@ export class TourService {
       duration: '6 Days / 5 Nights',
       price: 3499,
       rating: 4.9,
-      image: 'assets/images/PICHA - 15.png',
+      image: 'assets/images/LION CUBS.png',
       description: 'Experience the ultimate Tanzanian safari adventure, tracking the Big Five (lion, leopard, rhinoceros, elephant, and Cape buffalo) across the world-famous Serengeti and Ngorongoro Crater. This immersive journey combines thrilling game drives with stunning landscapes and rich cultural encounters.',
       highlights: [
         'Guaranteed Big Five sightings in their natural habitat',
@@ -221,10 +221,10 @@ export class TourService {
       groupSize: '2-6 guests',
       bestTime: ['June to October', 'January to February'],
       gallery: [
-        'assets/images/PICHA - 5.png',
-        'assets/images/PICHA - 6.png',
-        'assets/images/PICHA - 7.png',
-        'assets/images/PICHA - 8.png'
+        'assets/images/MBOGO.png',
+        'assets/images/LION.png',
+        'assets/images/TEMBO.png',
+        'assets/images/LEOPARD.png'
       ]
     },
     {
