@@ -2,7 +2,6 @@ export interface Itinerary {
   id: string;
   title: string;
   duration: string;
-  price: number;
   rating: number;
   image: string;
   description: string;
