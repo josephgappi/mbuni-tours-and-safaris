@@ -620,8 +620,7 @@ export class TourService {
   gallery: [
     'assets/images/kili-sunrise.PNG',
     'assets/images/kili-trek.jpg',
-    'assets/images/uhuru-peak.jpg',
-    'assets/images/ice.JPG'
+    'assets/images/uhuru-peak.jpg'
   ]
 },
 
