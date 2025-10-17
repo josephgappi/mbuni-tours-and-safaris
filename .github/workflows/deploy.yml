@@ -62,4 +62,5 @@ jobs:
             **/.git*
             **/.github*
             **/node_modules/**
-          timeout: 60000
+            **/*.map
+          timeout: 120000
