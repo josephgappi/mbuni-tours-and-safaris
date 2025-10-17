@@ -618,7 +618,7 @@ export class TourService {
   groupSize: '4–10 guests',
   bestTime: ['January to March', 'June to October'],
   gallery: [
-    'assets/images/kili-sunrise.PNG',
+    'assets/images/kili-sunrise.jpg',
     'assets/images/kili-trek.jpg',
     'assets/images/uhuru-peak.jpg'
   ]
