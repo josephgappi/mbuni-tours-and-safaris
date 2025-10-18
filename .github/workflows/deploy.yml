@@ -37,14 +37,6 @@ jobs:
             mv "$DIST_DIR/index.csr.html" "$DIST_DIR/index.html"
           fi
 
-      # 🗄️ Cache the built dist folder (optional if you reuse builds)
-      - name: Cache build output
-        uses: actions/cache@v4
-        with:
-          path: dist/mbuni-tours-and-safaris/browser
-          key: ${{ runner.os }}-build-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-build-
 
       # 🚀 Deploy via FTP (only for main branch)
       - name: 📂 Sync files via FTP
