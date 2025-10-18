@@ -422,10 +422,9 @@ export class TourService {
       groupSize: '2-8 guests',
       bestTime: ['June to October', 'December to February'],
       gallery: [
-        'assets/images/shifting-sands-1.jpg',
-        'assets/images/olduvai-gorge-1.jpg',
-        'assets/images/ngorongoro-crater-1.jpg',
-        'assets/images/maasai-village-1.jpg'
+        'assets/images/shifting-sands.jpg',
+        'assets/images/olduvai.jpg'
+        
       ]
     },
     // Add more tours as needed
