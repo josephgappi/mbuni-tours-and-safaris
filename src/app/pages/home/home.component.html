@@ -7,7 +7,9 @@
       alt="Tanzania Safari" 
       class="w-full h-full object-cover object-center md:object-[center_35%] transform transition-transform duration-1000 group-hover:scale-110"
       style="min-height: 100vh;"
-    >
+      loading="eager"
+      width="1920"
+      height="1080">
     <!-- Subtle overlay for better text readability -->
     <div class="absolute inset-0 bg-black/20 md:bg-transparent"></div>
   </div>
@@ -71,7 +73,7 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-amber-400">
         <a [routerLink]="['/itinerary', 'great-migration-safari']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/PICHA - 22.png" alt="Serengeti National Park" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img src="assets/images/PICHA -22.png" alt="Serengeti National Park" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-amber-500 rounded-full mb-2">Best Seller</span>
@@ -112,7 +114,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-blue-400">
         <a [routerLink]="['/itinerary', 'zanzibar-paradise']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/zanzibar.png" alt="Zanzibar Beach" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/zanzibar.png" 
+              alt="Zanzibar Beach" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full mb-2">Beach</span>
@@ -153,7 +161,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-green-400">
         <a [routerLink]="['/itinerary', 'kilimanjaro-trek']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/PICHA - 26.png" alt="Kilimanjaro Trek" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/PICHA -26.png" 
+              alt="Kilimanjaro Trek" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full mb-2">Adventure</span>
@@ -193,7 +207,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-purple-400">
         <a [routerLink]="['/itinerary', 'ngorongoro-crater']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/PICHA - 23.png" alt="Ngorongoro Crater" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/PICHA -23.png" 
+              alt="Ngorongoro Crater" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full mb-2">Wildlife</span>
@@ -231,7 +251,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-orange-400">
         <a [routerLink]="['/itinerary', 'tarangire-National-park']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/PICHA - 25.png" alt="Tarangire National Park" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/PICHA -25.png" 
+              alt="Tarangire National Park" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full mb-2">Safari</span>
@@ -304,7 +330,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-red-400">
         <a [routerLink]="['/itinerary', 'maasai-cultural']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/masai1.jpg" alt="Maasai Village" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/masai1.jpg" 
+              alt="Maasai Village" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full mb-2">Cultural</span>
@@ -377,7 +409,13 @@
       <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-yellow-400">
         <a [routerLink]="['/itinerary', 'selous-safari']" class="block">
           <div class="relative overflow-hidden h-64">
-            <img src="assets/images/ELEPHANTS.png" alt="Selous Game Reserve" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img 
+              src="assets/images/ELEPHANTS.png" 
+              alt="Selous Game Reserve" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
                 <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full mb-2">Wildlife</span>

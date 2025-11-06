@@ -117,9 +117,9 @@ export class TourService {
       groupSize: '2-6 guests',
       bestTime: ['June to October', 'December to February'],
       gallery: [
-        'assets/images/PICHA - 1.png',
+        'assets/images/PICHA - 18.png',
         'assets/images/PICHA - 2.png',
-        'assets/images/PICHA - 3.png',
+        'assets/images/pic2.jpg',
         'assets/images/PICHA - 4.png'
       ]
     },
@@ -230,7 +230,7 @@ export class TourService {
       title: 'Great Migration Safari',
       duration: '7 Days / 6 Nights',
       rating: 4.8,
-      image: 'assets/images/PICHA - 12.png',
+      image: 'assets/images/MIGRATION.PNG',
       description: 'Witness the greatest wildlife spectacle on earth as millions of wildebeest and zebras traverse the vast Serengeti plains in search of fresh grazing. This carefully crafted itinerary follows the path of the Great Migration for optimal wildlife viewing opportunities.',
       highlights: [
         'Witness the Great Migration river crossings',
@@ -328,10 +328,10 @@ export class TourService {
       groupSize: '2-6 guests',
       bestTime: ['July to October'],
       gallery: [
-        'assets/images/PICHA - 13.png',
-        'assets/images/PICHA - 14.png',
-        'assets/images/PICHA - 15.png',
-        'assets/images/PICHA - 16.png'
+        'assets/images/PICHA -13.png',
+        'assets/images/PICHA -14.png',
+        'assets/images/PICHA -15.png',
+        'assets/images/PICHA -16.png'
       ]
     },
     {
