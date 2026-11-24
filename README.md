@@ -1,59 +1,122 @@
-# MbuniToursAndSafaris
+# 🦁 Mbuni Tours and Safaris
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+### Discover Tanzania. Experience Africa.
 
-## Development server
+A modern tourism and safari website designed to showcase Tanzania's travel experiences, safari destinations, tour packages, and travel services.
 
-To start a local development server, run:
+🔗 **Live Website:** https://mbunitoursandsafaris.com
+
+---
+
+## 📌 Project Overview
+
+Mbuni Tours and Safaris is a web application developed to provide an online platform for showcasing tourism and safari experiences in Tanzania.
+
+The platform is designed to help potential travellers explore safari destinations, discover tour experiences, learn about available travel services, and connect with the company for enquiries and bookings.
+
+The project demonstrates practical skills in modern frontend development, responsive web design, component-based architecture, and building user-friendly web applications.
+
+## ✨ Key Features
+
+- **Responsive Design:** User-friendly interface across desktop, tablet, and mobile devices.
+- **Safari Destinations:** Presentation of Tanzania's tourism destinations and attractions.
+- **Tour Experiences:** Display of safari packages and travel experiences.
+- **Enquiry and Booking:** Interfaces for customers to contact the company and make enquiries.
+- **Modern User Interface:** Clean layouts and intuitive navigation.
+- **Performance:** Angular-based application architecture.
+
+*Note: Adjust this feature list to match the functionality actually implemented on the live website.*
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Angular 19 | Frontend application development |
+| TypeScript | Application logic and type safety |
+| HTML5 | Web page structure |
+| CSS3 | Styling and responsive layouts |
+| JavaScript | Interactive functionality |
+| Git & GitHub | Version control and project management |
+
+## 🏗️ Application Architecture
+
+The application uses Angular's component-based architecture to organise the user interface into reusable components and maintain a structured frontend codebase.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- Angular CLI 19.2.15
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate to the project directory:
+
+```bash
+cd MbuniToursAndSafaris
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Production Build
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The production build files will be generated in the `dist/` directory.
 
-## Running unit tests
+## 📷 Project Preview
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Visit the live website to explore the application:
 
-```bash
-ng test
-```
+https://mbunitoursandsafaris.com
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
+## 🎯 Project Objectives
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Develop a professional online presence for a tourism business.
+- Apply modern frontend development practices.
+- Build responsive and accessible user interfaces.
+- Demonstrate practical Angular and TypeScript development skills.
+- Provide a convenient digital platform for travellers to explore safari services.
 
-## Additional Resources
+## 👨‍💻 Developer
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Joseph Emanuel Gappi**
+
+Full-Stack Software Developer | Angular | TypeScript | PHP | Laravel | MySQL
+
+GitHub: https://github.com/josephgappi
+
+LinkedIn: Add your LinkedIn profile URL
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository and connect with me for collaboration.
+
+**Building practical solutions through technology.**
