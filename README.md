@@ -1,4 +1,4 @@
-# 🦁 Mbuni Tours and Safaris
+#  Mbuni Tours and Safaris
 
 ### Discover Tanzania. Experience Africa.
 
